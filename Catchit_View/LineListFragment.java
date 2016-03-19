@@ -44,10 +44,8 @@ public class LineListFragment extends Fragment{
         line.setText(route.getName());
 
         Spinner arrivaltime = (Spinner) v.findViewById(R.id.arrivaltime);
-        // configure spinner here
 
         TextView timer = (TextView) v.findViewById(R.id.timer);
-        // do timer voodoo here
 
         return v;
     }
@@ -61,20 +59,17 @@ public class LineListFragment extends Fragment{
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
 			if (convertView == null) {
-				convertView = getActivity().getLayoutInflater().inflate(
-						R.layout.line_fragment, null);
+				convertView = getActivity().getLayoutInflater().inflate(R.layout.line_fragment, null);
 			}
 			Log.d(TAG, "drawing lines, pos = " + position);
 			Button line = (Button)convertView.findViewById(R.id.line);
 			line.setText(getItem(position).getName());
 			
 
-			Spinner arrivaltime = (Spinner) convertView
-					.findViewById(R.id.arrivaltime);
-			// configure spinner here
+			Spinner arrivaltime = (Spinner) convertView.findViewById(R.id.arrivaltime);
 
 			TextView timer = (TextView) convertView.findViewById(R.id.timer);
-			// do timer voodoo here
+	
 			return convertView;
 			
 		}
