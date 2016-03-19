@@ -98,21 +98,7 @@ public class StationListFragment extends ListFragment {
 			ft.commit();
 			
 			return convertView;
-			
-//			Button line1 = (Button)convertView.findViewById(R.id.line1);
-//			line1.setText(sroutes.get(0).getName());
-//			
-//			Button line2 = (Button)convertView.findViewById(R.id.line2);
-//			line2.setText(sroutes.get(1).getName());
-//
-//			Spinner arrivaltime = (Spinner) convertView
-//					.findViewById(R.id.arrivaltime1);
-			// configure spinner here
 
-			//TextView timer = (TextView) convertView.findViewById(R.id.timer1);
-			// do timer voodoo here
-
-			
 		}
 	}
 }
